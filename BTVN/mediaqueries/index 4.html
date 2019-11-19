@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+
+        /* màn hình trên 1200*/
+        body{
+            background: green;
+        }
+        /* màn hình từ 1000 đến 1200px*/
+        @media screen and (max-width: 1200px){
+            body{
+                background: red;
+            }
+
+        }
+        /* màn hình từ 680 đến 1000px*/
+        @media screen and (max-width: 1000px){
+            body{
+                background: yellow;
+            }
+
+        }
+        /* màn hình từ 0 đến 680px*/
+        @media screen and (max-width: 680px){
+            body{
+                background: violet;
+            }
+
+        }
+
+        /*Chú ý khi sử dụng phải giảm dần liền nhau để tránh lỗi*/
+    </style>
+
+</head>
+<body>
+
+    Sử dụng max-width
+</body>
+</html>

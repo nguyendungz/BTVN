@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="normalize.css">
+    <style type="text/css">
+        header{
+            padding: 50px;
+            text-align: center;
+            background: greenyellow ;
+        }
+
+
+        footer{
+            padding: 50px;
+            text-align: center;
+            background: greenyellow ;
+        }
+
+        aside{
+            width: 20%;
+            box-sizing: border-box;
+            background: orange;
+            padding: 30px;
+            min-height: 400px;
+            float: left;
+        }
+
+        .main-content {
+            width: 80%;
+            background: burlywood;
+            box-sizing: border-box;
+            padding: 50px;
+            min-height: 400px;
+            float: right;
+        }
+        main{
+            overflow: auto;
+        }
+
+        @media screen and (max-width: 680px) {
+            /* Sử dụng cho màn hình nhỏ hơn 680px thì sẽ đổi độ rộng và không căn trái phải nữa*/
+            aside{
+                width: 1000%;
+                float: none;
+                /* Các thuộc tính cần thay đổi đè lại mới phải code ở đây*/
+            }
+
+            .main-content {
+                width: 100%;
+                float: none;
+            }
+
+
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Header</h1>
+</header>
+
+<main>
+    <section class="main-content">
+        <h1>Nội dung chính của trang web</h1>
+    </section>
+    <aside>
+        <h1>Side bar</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">Giới thiệu</a></li>
+                <li><a href="#">Sản phẩm</a></li>
+                <li><a href="#">Tin tức</a></li>
+            </ul>
+        </nav>
+    </aside>
+</main>
+
+<footer>
+    <h1>Footer</h1>
+</footer>
+</body>
+</html>
